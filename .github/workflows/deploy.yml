@@ -1,37 +1,18 @@
-name: Oluwatobi Website Deployment
+name: CI/CD - Deploy Portfolio Website
+
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Setup Node.js (for future scalability)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: |
-          if [ -f package.json ]; then
-            npm ci
-          else
-            echo "No package.json found - Using vanilla HTML/CSS/JS"
-          fi
-
-      - name: Build Project
-        run: |
-          echo "🚀 Building Portfolio Website..."
-          # build commands index.hmtl
-          echo "✅ Build completed successfully!"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -41,9 +22,3 @@ jobs:
           publish_branch: gh-pages
           allow_empty_commit: false
           force_orphan: true
-          enable_jekyll: false
-
-      - name: Deployment Summary
-        run: |
-          echo "🎉 Deployment Completed Successfully!"
-          echo "📍 Live Site: https://${{https://github.com/dahunsitobi/CI-CD-Website-Deployment}}.github.io/${{ github.event.repository.name }}"
