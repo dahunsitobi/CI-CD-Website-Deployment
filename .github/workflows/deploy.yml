@@ -1,31 +1,37 @@
-name: CI/CD - Deploy Portfolio to GitHub Pages
-
+name: Oluwatobi Website Deployment
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (for future scalability)
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Install dependencies (if any)
-        run: npm ci || echo "No package.json - skipping"
-
-      - name: Build the project
+      - name: Install Dependencies
         run: |
-          echo "Building website..."
-          # Add build commands here if using React/Next.js
+          if [ -f package.json ]; then
+            npm ci
+          else
+            echo "No package.json found - Using vanilla HTML/CSS/JS"
+          fi
+
+      - name: Build Project
+        run: |
+          echo "🚀 Building Portfolio Website..."
+          # build commands index.hmtl
+          echo "✅ Build completed successfully!"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -33,3 +39,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
+          allow_empty_commit: false
+          force_orphan: true
+          enable_jekyll: false
+
+      - name: Deployment Summary
+        run: |
+          echo "🎉 Deployment Completed Successfully!"
+          echo "📍 Live Site: https://${{https://github.com/dahunsitobi/CI-CD-Website-Deployment}}.github.io/${{ github.event.repository.name }}"
