@@ -1,104 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oluwatobi Dahunsi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Oluwatobi Dahunsi — Security Manager | Risk &amp; Governance | Asset Protection</title>
+<meta name="description" content="Security Manager with 10 years across logistics, manufacturing, and secure-technology sectors. Physical security, access control, risk governance, and incident response — proven across Africa, the Middle East, and international operations." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%225%22 fill=%22%230B0F14%22/><path d=%22M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z%22 fill=%22none%22 stroke=%22%23C98A3B%22 stroke-width=%221.6%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <h2 class="logo">Oluwatobi Dahunsi</h2>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-        </div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">
+      <span class="badge-id">OD</span>
+      <span class="nav__brand-text">
+        <span class="nav__name">Oluwatobi Dahunsi</span>
+        <span class="nav__role">Security &amp; Risk Leadership</span>
+      </span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" id="navMenu">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#competencies" data-nav>Competencies</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#impact" data-nav>Leadership Impact</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#credentials" data-nav>Credentials</a>
+      <a href="#contact" data-nav class="nav__cta">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1> <span class="highlight">Oluwatobi Dahunsi</span></h1>
-                <h3>Logical & Physical Security Specialist | Power Platform Developer</h3>
-                <p>Building secure, efficient, and intelligent solutions with Microsoft Power Platform and Access Control Systems.</p>
-                <a href="#projects" class="btn primary-btn">View My Projects</a>
-            </div>
+    <div class="nav__status" title="Open to global and remote security leadership roles">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="mono">AVAILABLE · REMOTE / GLOBAL</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow mono">SECURITY MANAGER &middot; RISK &amp; GOVERNANCE &middot; ASSET PROTECTION</p>
+        <h1 class="hero__title">
+          Ten years securing operations<br>
+          <span class="type-target" id="typeTarget">where failure isn't an option.</span>
+        </h1>
+        <p class="hero__lede">
+          I build and run physical and digital security programmes from the ground up — access control,
+          surveillance, incident response, governance — across multi-site operations in Nigeria, the wider
+          region, and international teams. I report on risk in the language executives use to make decisions.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#experience">Review the record</a>
+          <a class="btn btn--ghost" href="mailto:dahunsitobi@gmail.com">Get in touch</a>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I am a passionate technology professional based in Lagos, Nigeria, specializing in Logical and Physical Security Systems. With strong expertise in integrating Lenel OnGuard with Microsoft Power Platform, I focus on delivering automation solutions that drive operational efficiency.</p>
-                <p>Currently pursuing an Executive MBA in Strategic Leadership at Valar Institute, I combine technical excellence with leadership principles to deliver impactful digital transformation projects.</p>
-            </div>
+        <div class="hero__meta mono">
+          <span>Lagos, Nigeria</span>
+          <span class="dot">&middot;</span>
+          <span>+234 803 237 3297</span>
+          <span class="dot">&middot;</span>
+          <a href="https://linkedin.com/in/dahunsitobi" target="_blank" rel="noopener">linkedin.com/in/dahunsitobi</a>
         </div>
-    </section>
+      </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">Microsoft Power Apps</div>
-                <div class="skill-card">Power Automate</div>
-                <div class="skill-card">Dataverse</div>
-                <div class="skill-card">Lenel OnGuard 8.3</div>
-                <div class="skill-card">REST APIs</div>
-                <div class="skill-card">CI/CD Pipelines</div>
-                <div class="skill-card">HTML, CSS & JavaScript</div>
-                <div class="skill-card">Git & GitHub</div>
-            </div>
+      <div class="hero__console" aria-hidden="true">
+        <div class="console">
+          <div class="console__bar">
+            <span class="console__dot dot--red"></span>
+            <span class="console__dot dot--amber"></span>
+            <span class="console__dot dot--green"></span>
+            <span class="console__title mono">access-log.sys // live</span>
+          </div>
+          <ul class="console__feed" id="consoleFeed">
+            <li><span class="tag tag--ok">CLEAR</span> Egina FPSO project — zero major incidents, full lifecycle</li>
+            <li><span class="tag tag--ok">−90%</span> Tailgating incidents cut at LADOL free zone</li>
+            <li><span class="tag tag--ok">+95%</span> Security posture lift across CAT Mantrac Nigeria</li>
+            <li><span class="tag tag--ok">100%</span> NIMASA compliance rating, security training programme</li>
+            <li><span class="tag tag--ok">3,500+</span> Personnel &amp; contractors under managed access control</li>
+            <li><span class="tag tag--ok">40+</span> Countries in scope, G+D global security governance</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Meal Consumption Management System</h3>
-                    <p>Integrated Lenel OnGuard 8.3 with Microsoft Power Platform for automated meal tracking and billing.</p>
-                    <p><strong>Tech:</strong> Power Apps, Power Automate, Dataverse, REST API</p>
-                </div>
-                <div class="project-card">
-                    <h3>Personal Portfolio with CI/CD</h3>
-                    <p>Modern responsive portfolio website with fully automated CI/CD pipeline using GitHub Actions.</p>
-                    <p><strong>Tech:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
-                </div>
-            </div>
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <p class="eyebrow mono">01 &nbsp;/ ABOUT</p>
+      <h2>Built for environments where the cost of a gap is measured in real terms.</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__text">
+        I'm a security and risk professional based in Lagos, working across logistics, manufacturing, and
+        secure-technology environments. My background spans physical security design, access control and
+        surveillance infrastructure, incident and crisis management, and the governance and compliance work
+        that keeps operations defensible under audit. I've reported directly to C-suite leadership, coordinated
+        with international teams across distributed sites, and led programmes from first policy draft to
+        measured, sustained results.
+      </p>
+      <p class="about__text">
+        I'm currently completing an Executive MBA in Strategic Leadership at Quantic School of Business and
+        Technology, layering strategic and organisational thinking on top of operational security expertise —
+        because the hardest problems in this field are rarely technical alone; they're about people, incentives,
+        and how an organisation actually behaves under pressure.
+      </p>
+      <div class="stat-grid" id="statGrid">
+        <div class="stat">
+          <span class="stat__value" data-count="95">0</span><span class="stat__unit">%</span>
+          <span class="stat__label mono">Security posture lift<br>CAT Mantrac, year one</span>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-            </form>
+        <div class="stat">
+          <span class="stat__value" data-count="90">0</span><span class="stat__unit">%</span>
+          <span class="stat__label mono">Tailgating reduction<br>LADOL free zone</span>
         </div>
-    </section>
+        <div class="stat">
+          <span class="stat__value" data-count="0">0</span>
+          <span class="stat__label mono">Major incidents<br>Egina FPSO, full lifecycle</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="100">0</span><span class="stat__unit">%</span>
+          <span class="stat__label mono">NIMASA compliance<br>rating achieved</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Oluwatobi Dahunsi.</p>
-    </footer>
+  <!-- ============ COMPETENCIES ============ -->
+  <section class="section section--panel" id="competencies">
+    <div class="section__head">
+      <p class="eyebrow mono">02 &nbsp;/ CORE COMPETENCIES</p>
+      <h2>Three disciplines, one operating picture.</h2>
+    </div>
+    <div class="comp-grid">
+      <article class="comp-card">
+        <h3><span class="comp-card__glyph" aria-hidden="true">◈</span> Operations &amp; Physical Security</h3>
+        <ul class="chip-list">
+          <li>Security Operations</li>
+          <li>Incident &amp; Crisis Management</li>
+          <li>Physical Security</li>
+          <li>Access Control Systems</li>
+          <li>Lenel OnGuard</li>
+          <li>Avigilon CCTV</li>
+          <li>Biometric Systems</li>
+          <li>Surveillance Infrastructure</li>
+          <li>ISPS Code</li>
+        </ul>
+      </article>
+      <article class="comp-card">
+        <h3><span class="comp-card__glyph" aria-hidden="true">◈</span> Risk &amp; Governance</h3>
+        <ul class="chip-list">
+          <li>Risk Assessment</li>
+          <li>Governance Frameworks</li>
+          <li>Business Continuity</li>
+          <li>Audit &amp; Compliance</li>
+          <li>Executive Reporting</li>
+          <li>ISO 9001 / 45001 / 14001</li>
+          <li>Intelligence Gathering</li>
+          <li>Law Enforcement Liaison</li>
+        </ul>
+      </article>
+      <article class="comp-card">
+        <h3><span class="comp-card__glyph" aria-hidden="true">◈</span> Technology &amp; Systems</h3>
+        <ul class="chip-list">
+          <li>Cybersecurity</li>
+          <li>Data Privacy Compliance</li>
+          <li>ICS / OT Security</li>
+          <li>Critical Infrastructure Protection</li>
+          <li>Policy Development</li>
+          <li>Security Awareness Training</li>
+          <li>CI/CD &amp; Web Deployment</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <p class="eyebrow mono">03 &nbsp;/ EXPERIENCE</p>
+      <h2>The record, in order.</h2>
+    </div>
+
+    <ol class="log">
+      <li class="log__entry" data-reveal>
+        <div class="log__time mono">DEC 2022 — PRESENT <span class="tag tag--active">ACTIVE</span></div>
+        <div class="log__body">
+          <h3>Local Security Manager</h3>
+          <p class="log__org">Giesecke+Devrient (G+D), Currency Technology Division — global security technology firm, 40+ countries</p>
+          <ul>
+            <li>Run security strategy for high-value currency production operations across physical, access control, and logical security domains.</li>
+            <li>Own incident response end to end, from first alert through containment, investigation, and debrief, reducing disruption to critical production lines.</li>
+            <li>Monitor and maintain Lenel OnGuard and CCTV systems remotely, coordinating with on-site teams to enforce access protocols.</li>
+            <li>Lead data privacy and cybersecurity compliance, aligning local operations with G+D global standards and GDPR-equivalent requirements.</li>
+            <li>Serve as primary security point of contact for HR, IT, Operations, and the country executive; brief leadership quarterly on risk.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="log__entry" data-reveal>
+        <div class="log__time mono">MAR 2021 — DEC 2022</div>
+        <div class="log__body">
+          <h3>Asset Protection &amp; Control Manager</h3>
+          <p class="log__org">CAT Mantrac Nigeria Limited — Authorized Caterpillar Dealership, Africa &amp; Middle East</p>
+          <ul>
+            <li>Raised overall security posture by 95%, standardizing safety and asset-protection protocols across all Nigerian facilities within the first year.</li>
+            <li>Rebuilt incident response procedures and ran crisis management drills with regional and executive leadership.</li>
+            <li>Developed intelligence-sharing arrangements with local law enforcement and government agencies, improving response times.</li>
+            <li>Ran regular audits across all sites; passed every internal and external review.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="log__entry" data-reveal>
+        <div class="log__time mono">MAR 2016 — FEB 2021</div>
+        <div class="log__body">
+          <h3>Security &amp; Access Control Manager</h3>
+          <p class="log__org">LADOL Integrated Logistics Free Zone — supporting the TotalEnergies Egina FPSO offshore project</p>
+          <ul>
+            <li>Designed and delivered end-to-end security for the Egina FPSO project, with zero major security incidents across the full project lifecycle.</li>
+            <li>Cut tailgating by 90% and visitor processing time by 75% through targeted access control and surveillance upgrades.</li>
+            <li>Managed Lenel OnGuard, Avigilon CCTV, and biometric systems for 3,500+ staff, contractors, and visitors.</li>
+            <li>Built security training that scored a 100% superior compliance rating from NIMASA.</li>
+            <li>Wrote and enforced protocols aligned with the ISPS Code and relevant ISO standards.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="log__entry" data-reveal>
+        <div class="log__time mono">OCT 2015 — FEB 2016</div>
+        <div class="log__body">
+          <h3>Security Systems Administrator</h3>
+          <p class="log__org">ASI World</p>
+          <ul>
+            <li>Designed, integrated, and tested surveillance and access control solutions for commercial and industrial clients.</li>
+            <li>Delivered a deployment fix that saved a client up to $10,000 while resolving a long-standing legacy system issue.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ LEADERSHIP IMPACT ============ -->
+  <section class="section section--panel" id="impact">
+    <div class="section__head">
+      <p class="eyebrow mono">04 &nbsp;/ LEADERSHIP IMPACT</p>
+      <h2>Leadership shows up when things are on the line.</h2>
+    </div>
+    <div class="impact-grid">
+      <article class="impact-card">
+        <p class="impact-card__ref mono">CASE / GLOBAL GOVERNANCE</p>
+        <h3>Holding the line across 40+ countries</h3>
+        <p>At G+D, I'm the single point of accountability connecting country operations to global security
+          governance — briefing the country executive, aligning local practice with international standards,
+          and contributing directly to cross-border protocol and risk governance reviews alongside G+D's
+          international security teams.</p>
+      </article>
+      <article class="impact-card">
+        <p class="impact-card__ref mono">CASE / ORGANISATIONAL TURNAROUND</p>
+        <h3>Rebuilding a security programme from zero</h3>
+        <p>At CAT Mantrac, I inherited a fragmented approach to asset protection and, within a single year,
+          introduced standardised protocols across every Nigerian facility, rebuilt incident response from
+          scratch, and brought every site through internal and external review without a single failed audit.</p>
+      </article>
+      <article class="impact-card">
+        <p class="impact-card__ref mono">CASE / HIGH-STAKES DELIVERY</p>
+        <h3>Zero incidents on a national infrastructure project</h3>
+        <p>Leading security for the Egina FPSO project meant owning risk on one of Nigeria's most strategically
+          significant offshore developments — coordinating access for thousands of personnel under maritime
+          security law, and closing the project with zero major incidents from first day to last.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <p class="eyebrow mono">05 &nbsp;/ FEATURED PROJECTS</p>
+      <h2>Where security operations meet software.</h2>
+    </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <p class="project-card__file mono">FILE // 001</p>
+        <h3>Meal Consumption Management System</h3>
+        <p>Integrated Lenel OnGuard 8.3 with Microsoft Power Platform to automate meal tracking and billing,
+          replacing a manual process with a system driven directly by verified access-control events.</p>
+        <ul class="chip-list chip-list--tight">
+          <li>Power Apps</li><li>Power Automate</li><li>Dataverse</li><li>REST API</li><li>Lenel OnGuard 8.3</li>
+        </ul>
+      </article>
+      <article class="project-card">
+        <p class="project-card__file mono">FILE // 002</p>
+        <h3>Personal Portfolio with CI/CD</h3>
+        <p>This site: a responsive portfolio with a fully automated GitHub Actions pipeline — every push to
+          <code>main</code> builds and deploys straight to GitHub Pages, no manual step in between.</p>
+        <ul class="chip-list chip-list--tight">
+          <li>HTML / CSS / JS</li><li>GitHub Actions</li><li>GitHub Pages</li><li>CI/CD</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CREDENTIALS ============ -->
+  <section class="section section--panel" id="credentials">
+    <div class="section__head">
+      <p class="eyebrow mono">06 &nbsp;/ CREDENTIALS</p>
+      <h2>Education, certifications, and engagement.</h2>
+    </div>
+
+    <div class="cred-columns">
+      <div>
+        <h3 class="cred-heading">Education</h3>
+        <ul class="edu-list">
+          <li>
+            <span class="edu-degree">Executive MBA — Strategic Leadership</span>
+            <span class="edu-school mono">Quantic School of Business and Technology, USA &middot; in progress, Class of Apr 2027</span>
+          </li>
+          <li>
+            <span class="edu-degree">Executive MBA — Big Data Management</span>
+            <span class="edu-school mono">IU International University of Applied Sciences, Germany</span>
+          </li>
+          <li>
+            <span class="edu-degree">BSc — Politics, Philosophy &amp; Economics</span>
+            <span class="edu-school mono">Obafemi Awolowo University &middot; 2014</span>
+          </li>
+          <li>
+            <span class="edu-degree">CCNA — Network &amp; System Administration</span>
+            <span class="edu-school mono">Cisco Networking Academy &middot; 2011</span>
+          </li>
+        </ul>
+
+        <h3 class="cred-heading">Conferences &amp; Engagement</h3>
+        <ul class="conf-list mono">
+          <li>International Security Manager Conference — Munich, Germany (2023, 2025)</li>
+          <li>International Information Security Forum — Prague, Czech Republic (2023, 2025)</li>
+          <li>MEA Leadership Summit — Nigeria (2022)</li>
+        </ul>
+
+        <h3 class="cred-heading">Languages</h3>
+        <ul class="conf-list mono">
+          <li>English — Professional Proficiency</li>
+          <li>Yoruba — Native / Bilingual Proficiency</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="cred-heading">Certifications</h3>
+        <div class="badge-grid">
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">2026</span>
+            <span class="cert-badge__name">Industrial Control System Cybersecurity (ICS 300)</span>
+            <span class="cert-badge__issuer mono">CISA</span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">2025</span>
+            <span class="cert-badge__name">Certified Security Associate (CSA&reg;)</span>
+            <span class="cert-badge__issuer mono">CorpSecurity International</span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">2024</span>
+            <span class="cert-badge__name">Cyber Risk Management</span>
+            <span class="cert-badge__issuer mono">Cisco Networking Academy</span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">—</span>
+            <span class="cert-badge__name">Certified Access Control Associate</span>
+            <span class="cert-badge__issuer mono">LenelS2 / UTC</span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">2018</span>
+            <span class="cert-badge__name">ISO 9001, 45001 &amp; 14001 Internal Auditor</span>
+            <span class="cert-badge__issuer mono">SGS</span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">—</span>
+            <span class="cert-badge__name">Critical Infrastructure Protection</span>
+            <span class="cert-badge__issuer mono">ICIP &amp; OPSWAT</span>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__year mono">2018</span>
+            <span class="cert-badge__name">Certified Project Management Associate</span>
+            <span class="cert-badge__issuer mono">Wolverhampton Graduate Conservatory</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section__head">
+      <p class="eyebrow mono">07 &nbsp;/ CONTACT</p>
+      <h2>Open to global and remote security leadership roles.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>The fastest way to reach me is email or LinkedIn. If you're hiring for a security, risk, or
+          governance leadership role — remote or on-site — I'd like to hear about it.</p>
+        <ul class="contact-links mono">
+          <li><a href="mailto:dahunsitobi@gmail.com">dahunsitobi@gmail.com</a></li>
+          <li><a href="tel:+2348032373297">+234 803 237 3297</a></li>
+          <li><a href="https://linkedin.com/in/dahunsitobi" target="_blank" rel="noopener">linkedin.com/in/dahunsitobi</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name">
+
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" required autocomplete="email">
+
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="contact-form__note mono" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">&copy; <span id="year">2026</span> Oluwatobi Gbolahan Dahunsi &nbsp;·&nbsp; session end.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
